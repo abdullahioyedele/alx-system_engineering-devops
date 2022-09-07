@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la -t -r | grep ^- | tail
+find . -type f -print f "%t - %p\n" | sort -n | tail
